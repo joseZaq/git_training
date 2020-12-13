@@ -8,12 +8,12 @@ public class buscaminas {
     //hacer un buscaminas
     public static void main(String[] args) {
         Scanner scanner= new Scanner(System.in).useLocale(Locale.US);
+        //imprime el titulo y la petición
         System.out.print("            BUSCAMINAS\nIngresa las filas y columnas del buscaminas:\n m x n = ");
         System.out.println();
-        /*
+        //solocita filas(m) y columnas(n) de la matriz del buscaminas
         int m=scanner.nextInt();
-        int n=scanner.nextInt();*/
-        int m=4,n=4;
+        int n=scanner.nextInt()
         int[][] mapaMinas=new int[m][n];
         //poner minas
         for(int i=0;i<mapaMinas.length;i++){
@@ -22,7 +22,7 @@ public class buscaminas {
             }
         }
         System.out.println(Arrays.deepToString(mapaMinas));
-        //colocar numeros propios del buscaminas
+        //colocar numeros propios de cada casilla
         int valorCasilla=0;
         for(int i=1;i<mapaMinas.length-1;i++){
             for(int j=1;j<mapaMinas[i].length-1;j++){
