@@ -13,7 +13,7 @@ public class buscaminas {
         System.out.println();
         //solocita filas(m) y columnas(n) de la matriz del buscaminas
         int m=scanner.nextInt();
-        int n=scanner.nextInt()
+        int n=scanner.nextInt();
         int[][] mapaMinas=new int[m][n];
         //poner minas
         for(int i=0;i<mapaMinas.length;i++){
@@ -39,6 +39,12 @@ public class buscaminas {
                 if(mapaMinas[i-1][j-1]==-1) valorCasilla++;
                 mapaMinas[i][j]=valorCasilla;
             }
+        }
+        for (int i = 0; i < mapaMinas.length; i++) {
+            for (int j = 0; j < mapaMinas[i].length; j++) {
+                if(mapaMinas[i][j] == -1) System.out.print("\u26FD ");
+            }
+            System.out.println();
         }
         System.out.println(Arrays.deepToString(mapaMinas));
     }
