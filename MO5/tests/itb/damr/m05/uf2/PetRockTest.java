@@ -1,8 +1,7 @@
 package itb.damr.m05.uf2;
-import org.junit.Assert;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 class PetRockTest {
     @Test
     void getNom() {
