@@ -11,7 +11,16 @@ public class Calculadora {
         int b= scanner.nextInt();
         //actions
     }
-    public static int suma(int a,int b){
+    public  int suma(int a,int b){
         return (a+b);
+    }
+    public  int resta(int a,int b){
+        return (a-b);
+    }
+    public  int multiplication(int a,int b){
+        return (a*b);
+    }
+    public  int division(int a,int b){
+        return (a/b);
     }
 }
